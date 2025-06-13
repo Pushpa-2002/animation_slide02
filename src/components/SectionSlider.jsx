@@ -48,7 +48,7 @@ export default function SectionSlider() {
           onClick={() => handleClick(sec.id)}
           className={`w-4 h-4 rounded-full border-2 transition duration-300 ${
             activeSection === sec.id
-              ? 'bg-green-600 border-blue-600 scale-125' // active dot
+              ? 'bg-green-600 border-green-600 scale-125' // active dot
               : 'bg-white border-white hover:bg-blue-500' // inactive dot
           }`}
           title={sec.label}
