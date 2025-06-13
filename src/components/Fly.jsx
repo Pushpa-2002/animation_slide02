@@ -18,7 +18,7 @@ export default function Fly() {
                  float-plane z-0">
                     <Plane className="w-[200px] h-[90px]"/>
                  </div>
-
+        <div className='z-10 text-center'>
         <h2 className={`text-8xl font-bold ${isInView ? 'animate-from-top' : 'opacity-0'}`}>FLY</h2>
         <p className={`text-2xl font-medium ${isInView ? 'animate-from-right' : 'opacity-0'}`}>
           Your journey to success begins with a single flight
@@ -40,6 +40,7 @@ export default function Fly() {
               <span className={`text-right pr-4 w-[100px] rounded-sm ${flight.status === "Boarding" ? "bg-green-600 text-white" : "bg-blue-600 text-white"}`} >{flight.status}</span>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </>
