@@ -1,0 +1,120 @@
+/* styles/animations.css */
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-circle {
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.float-circle-slow {
+  animation: floatUpDown 10s ease-in-out infinite;
+}
+
+@keyframes flyAcross {
+  0% {
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(100px);
+  }
+  40%{
+    transform: translateY(20px);
+  }
+  60%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.float-plane {
+  animation: flyAcross 8s linear infinite;
+}
+
+/* styles/animations.css */
+
+@keyframes slideFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInItem {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-from-top {
+  animation: slideFromTop 1s ease-out forwards;
+}
+
+.animate-from-right {
+  animation: slideFromRight 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale 1.5s ease-out forwards;
+}
+
+.list-item-fade {
+  opacity: 0;
+  animation: fadeInItem 0.5s ease-out forwards;
+}
+
+@keyframes scale {
+    0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-scale{
+    animation: scale 1.5s ease forwards;
+}
