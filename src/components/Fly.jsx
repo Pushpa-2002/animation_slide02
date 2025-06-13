@@ -13,7 +13,7 @@ export default function Fly() {
   ];
   return (
     <>
-      <div ref={ref} className="relative bg-gradient-to-br from-blue-200 to-blue-500 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center overflow-hidden">
+      <div ref={ref} id='fly' className="relative bg-gradient-to-br from-blue-200 to-blue-500 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center overflow-hidden">
                  <div className="absolute top-20 left-220 
                  float-plane z-0">
                     <Plane className="w-[200px] h-[90px]"/>

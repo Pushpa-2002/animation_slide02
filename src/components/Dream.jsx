@@ -4,7 +4,7 @@ import '../styles/Animation.css';
 export default function Dream() {
     const { ref, isInView } = useInView();
   return (
-    <div ref={ref} className="relative w-full h-[100vh] bg-gradient-to-br from-yellow-300 to-purple-500 text-white flex flex-col space-y-10 p-10 justify-center items-center overflow-hidden">
+    <div ref={ref} id='dream' className="relative w-full h-[100vh] bg-gradient-to-br from-yellow-300 to-purple-500 text-white flex flex-col space-y-10 p-10 justify-center items-center overflow-hidden">
       
       {/* Background floating circles */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-white/20 rounded-full backdrop-blur-sm float-circle z-0"></div>

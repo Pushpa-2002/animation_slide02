@@ -7,7 +7,7 @@ export default function Prepare() {
 
   return (
     <div
-      ref={ref}
+      ref={ref} id='prepare'
       className="bg-gradient-to-br from-red-400 to-blue-400 text-black w-full max-h-[100vh] flex flex-col space-y-10 p-10 py-20 justify-center items-center overflow-hidden"
     >
       {/* Heading */}

@@ -6,7 +6,7 @@ export default function Success(){
       const { ref, isInView } = useInView();
     return (
         <>
-          <div ref={ref} className="bg-gradient-to-br from-gray-300 to-green-300 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center">
+          <div ref={ref} id='success' className="bg-gradient-to-br from-gray-300 to-green-300 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center">
           <h2 className={`text-8xl font-bold  ${isInView ? 'animate-from-right' : 'opacity-0'} `}>SUCCESS</h2>
           <p className={`text-2xl font-medium ${isInView ? 'animate-from-top':'opacity-0'}`}>Living your dream, building your future in the Gulf</p>
         <div className={`grid grid-cols-3 gap-7 ${isInView ? 'animate-scale' : 'opacity-0' } `}>

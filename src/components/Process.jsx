@@ -6,7 +6,7 @@ export default function Process() {
     const { ref, isInView } = useInView();
   return (
     <>
-      <div ref={ref} className="bg-gradient-to-br from-purple-500 via-blue-500 to-pink-400 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center">
+      <div ref={ref} id='process' className="bg-gradient-to-br from-purple-500 via-blue-500 to-pink-400 text-white w-full h-[100vh] flex flex-col space-y-10 p-10 justify-center items-center">
         <h2 className={`text-8xl font-bold ${isInView ? 'animate-from-top' : 'opacity-0'} `}>PROCESS</h2>
         <p className={`text-2xl font-medium ${isInView ? 'animate-from-right' : 'opacity-0'}`}>
           We handle the complex procedures while you focus on your future
